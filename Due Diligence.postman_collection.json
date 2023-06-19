@@ -1,0 +1,77 @@
+{
+	"info": {
+		"_postman_id": "76733359-3dc9-40a9-8723-1902e5ae633c",
+		"name": "Due Diligence",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26341680"
+	},
+	"item": [
+		{
+			"name": "Hello",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PEP status - person",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/api/v1/pep?name=\"sss\"",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"v1",
+						"pep"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "\"sss\""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PEP status - list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/api/v1/pep",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"v1",
+						"pep"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
