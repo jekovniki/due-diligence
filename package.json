@@ -12,12 +12,21 @@
   },
   "author": "",
   "license": "ISC",
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node",
+    "setupFiles": [
+      "dotenv/config"
+    ]
+  },
   "dependencies": {
+    "@types/axios": "^0.14.0",
     "@types/body-parser": "^1.19.2",
     "@types/cors": "^2.8.13",
     "@types/express": "^4.17.17",
     "@types/helmet": "^4.0.0",
     "@types/node": "^20.3.1",
+    "axios": "^1.4.0",
     "body-parser": "^1.20.2",
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",
@@ -28,6 +37,9 @@
     "zod": "^3.21.4"
   },
   "devDependencies": {
-    "nodemon": "^2.0.22"
+    "@types/jest": "^29.5.0",
+    "jest": "^29.5.0",
+    "nodemon": "^2.0.22",
+    "ts-jest": "^29.1.0"
   }
 }
