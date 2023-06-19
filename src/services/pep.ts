@@ -1,6 +1,7 @@
 import Cache from "./cache";
 import FetchAPI from "../libs/fetch";
 import { Category, Institution, Person } from "../interfaces/pep";
+import { SOURCE } from "../utils/configuration";
 
 export async function getPEPList(): Promise<{ success: boolean, data: Record<string, any>[] } | { success: boolean, message: string }> {
     try {
@@ -32,7 +33,7 @@ export async function getPEPList(): Promise<{ success: boolean, data: Record<str
 }
 
 export async function getPEPListFromCommissionAgainstCorruption() {
-    const request = await FetchAPI.get('https://register.caciaf.bg/2022/list.xml');
+    const request = await FetchAPI.get(SOURCE);
 
     return request.data;
 }

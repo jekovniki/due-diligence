@@ -14,3 +14,5 @@ export const SERVER = {
         return process.env.REST_ORIGIN;
     }
 }
+
+export const SOURCE = validateEnvironmentVariable(process.env.URL_FOR_PEP_DATA);
