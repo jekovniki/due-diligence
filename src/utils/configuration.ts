@@ -15,4 +15,4 @@ export const SERVER = {
     }
 }
 
-export const SOURCE = validateEnvironmentVariable(process.env.URL_FOR_PEP_DATA);
+export const SOURCE = validateEnvironmentVariable(process.env.URL_FOR_COMMISSION_DATA);
