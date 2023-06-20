@@ -1,16 +1,27 @@
 export interface Person {
-  Name: string;
-  Position: string;
-  Category: string;
-  Institution: string;
+  name: string;
+  position: string;
+  category: string;
+  institution: string;
+  year: string
 }
 
 export interface Institution {
-  Name: string;
-  Person: Person[];
+  name: string;
+  person: Person[];
 }
 
 export interface Category {
-  Name: string;
-  Institution: Institution[];
+  name: string;
+  institution: Institution[];
+}
+
+export interface StructuredPEPData {
+  name: string;
+  history: {
+    year: string;
+    position: string;
+    category: string;
+    institution: string;
+  }[];
 }

@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
-import { ERRORS, SERVER, SUCCESS } from '../utils/constants/status-codes';
-import { getPEPList } from "../services/pep";
+import { SERVER, SUCCESS } from '../utils/constants/status-codes';
+import { getPEPList } from "../services/commission-against-corruption";
 
 
 export async function getPEPstatus(request: Request, response: Response) {
